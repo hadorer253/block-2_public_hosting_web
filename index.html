@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Trong Hieu — Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="logo">PTH</a>
+
+            <button id="menu-toggle" class="menu-toggle"
+                    aria-expanded="false" aria-controls="primary-nav"
+                    aria-label="Open menu">☰</button>
+
+            <nav id="primary-nav" class="nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle"
+                    aria-label="Toggle light/dark mode" aria-pressed="false">🌙</button>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Hi, I'm</p>
+                <h1>Phan Trong Hieu</h1>
+                <p class="tagline">IT Student · Music Arranger · Song Writer</p>
+                <a href="#projects" class="cta">See my projects →</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>I'm an IT student, also working as a music arranger and songwriter.
+                   I enjoy blending code and music to build creative products.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li><strong>HTML / CSS</strong> — layout, responsive design</li>
+                    <li><strong>JavaScript</strong> — DOM, basic interaction</li>
+                    <li><strong>Music Production</strong> — arranging, songwriting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="hint">Click a project title to see details.</p>
+                <div class="projects">
+                    <article class="project">
+                        <h3>
+                            <button class="accordion-trigger" aria-expanded="false" aria-controls="p1">
+                                Personal Portfolio <span class="chevron" aria-hidden="true">▾</span>
+                            </button>
+                        </h3>
+                        <div id="p1" class="accordion-panel" hidden>
+                            <p>A static profile page built with semantic HTML, responsive CSS, and JS interaction.</p>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <h3>
+                            <button class="accordion-trigger" aria-expanded="false" aria-controls="p2">
+                                Music Covers <span class="chevron" aria-hidden="true">▾</span>
+                            </button>
+                        </h3>
+                        <div id="p2" class="accordion-panel" hidden>
+                            <p>Arranging and songwriting project for cover tracks, shared on social media.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Phan Trong Hieu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
